@@ -88,8 +88,8 @@ function create_interval() {
     interval = setInterval(function() {
 
         get_time();
-
-        if (hour > 2) {
+        // console.log(hour + "|" + minute + "|" + second);
+        if (hour >= 2) {
             $("#time").css("color", "red");
         } else {
             $("#time").css("color", "green");
@@ -177,8 +177,8 @@ function pill_create_interval() {
     pill_interval = setInterval(function() {
 
         pill_get_time();
-
-        if (pill_hour > 22) {
+        // console.log(pill_hour + "|" + pill_minute + "|" + pill_second);
+        if (pill_hour >= 22) {
             $("#pill_time").css("color", "red");
         } else {
             $("#pill_time").css("color", "green");
